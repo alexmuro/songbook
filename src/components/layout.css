@@ -1,0 +1,20 @@
+span[data-chord]:before {
+    position    : relative;
+    top         : -1em;
+    display     : inline-block;
+    content     : attr(data-chord);
+    width       : 0;
+    font-weight : bold;
+}
+
+.right {
+	float: right;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
